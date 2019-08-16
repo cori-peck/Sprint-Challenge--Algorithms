@@ -1,6 +1,7 @@
 Add your answers to the Algorithms exercises here.
 
 Exercise I:
+
 a)  a=0 is                          O(1) and is constant
     while (a < n * n * n):          is determined by how 'a' iterates
     a = a + n * n                   this line defines a's iteration as n^2.
@@ -27,3 +28,14 @@ c)  def bunnyEars(bunnies):
     return 2 + bunnyEars(bunnies-1) O(n)
 
     This is a recursive function since it calls itself, droping one 'n' per recursion until it reaches the base case. Time complexity = O(n)
+
+
+Exercise II:
+
+Binary Search - Time Complexity = O(log(n))
+
+start at floor one as your base case
+determine mid point of all the floors
+if egg breaks, the search would go to the lower floors of the building
+if egg doesn't break, the search would go to the upper floors
+repeat until we find the answer at floor f
